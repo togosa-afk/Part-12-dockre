@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "name": "todo-api-app",
+  "description": "",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git",
+    "apidog.private.*",
+    ".apidog"
+  ]
+}

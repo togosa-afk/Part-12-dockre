@@ -1,0 +1,11 @@
+method: put
+url: localhost:3000/todos/6aad399d936609fadadcfb5d
+requestBody:
+  type: application/json
+  data: "{\r
+
+    \  \"text\": \"Updated text1\",\r
+
+    \  \"done\": true\r
+
+    }"
