@@ -23,7 +23,7 @@ test.describe('Todo App E2E Tests', () => {
     await todoInput.fill(testTodoText);
     
     // Submit the form (look for submit button or press Enter)
-    await page.keyboard.press('Enter');
+    await page.getByRole('button', { name: "text" }).click();
     
     // Wait a moment for the todo to be added
     await page.waitForTimeout(500);
