@@ -16,11 +16,10 @@ const TodoView = () => {
     refreshTodos();
   }, []);
 
-  const createTodo = async (todo) => {
-    const { data } = await axios.post("/todos", todo);
-    setTodos((currentTodos) => [...currentTodos, data]);
-  };
-
+const createTodo = async (todo) => {
+  await axios.post("/todos", todo);
+  await refreshTodos();
+};
   const deleteTodo = async (todo) => {
     await axios.delete(`/todos/${todo._id}`);
     refreshTodos();
