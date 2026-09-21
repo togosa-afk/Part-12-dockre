@@ -25,7 +25,6 @@ services:
     build:
       context: ./todo-backend
       dockerfile: dev.Dockerfile
-    # شلنا الـ ports من هنا!
     volumes:
       - ./todo-backend:/usr/src/app
       - /usr/src/app/node_modules
